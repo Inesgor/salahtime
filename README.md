@@ -14,19 +14,15 @@ $ git clone https://github.com/unixsheikh/c-salahtime
 
 The Makefile uses clang, but if you want to use gcc instead just change the `CC` variable to gcc, then run the make command:
 
-**Clang**
-
 ```
 $ cd c-salahtime
 $ make
 ```
 
-**GCC**
+Or:
 
 ```
-$ cd c-salahtime
-$ export CC=gcc
-$ make -e
+$ make CC=gcc
 ```
 
 Then simply copy the `salahtime` executable to somewhere in your home directory and add that directory to your `$PATH` variable.
