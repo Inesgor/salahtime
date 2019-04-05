@@ -1,6 +1,6 @@
 # salahtime
 
-salahtime is a small command line application written in C for Linux and BSD that displays the Islamic prayer times for Copenhagen in Denmark.
+salahtime is a small command line application written in C for Linux and BSD that displays the Islamic prayer times for Europe/Copenhagen.
 
 salahtime uses a multidimensional array to store the time table and the table can easily be substituted for another if needed.
 
@@ -9,7 +9,7 @@ salahtime uses a multidimensional array to store the time table and the table ca
 Clone this repository or download the zip version.
 
 ```
-$ git clone https://github.com/unixsheikh/c-salahtime
+$ git clone https://github.com/unixsheikh/salahtime
 ```
 
 The Makefile uses clang, but if you want to use gcc instead just change the `CC` variable to gcc, then run the make command:

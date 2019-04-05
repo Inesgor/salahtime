@@ -5,7 +5,7 @@
 #include <stdlib.h>
 
 #include "salahtime.h"
-#include "dnk_cph.c"
+#include "europe_copenhagen.c"
 
 #define MAX_MINUTES 120
 #define MIN_MINUTES -120
@@ -151,7 +151,7 @@ main(int argc, char *argv[])
 
     }
 
-    display_calendar(dnk_cph, add_sub_min);
+    display_calendar(europe_copenhagen, add_sub_min);
 
     return 0;
 }

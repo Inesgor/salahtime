@@ -1,11 +1,9 @@
 /*
- * Islamic prayer time for Denmark (DNK), Copenhagen (CPH)
+ * Islamic prayer time for Europe/Copenhagen
  *
- * IATA airport codes for cities.
- * https://en.wikipedia.org/wiki/List_of_airports_by_IATA_code:_A
+ * The Timezone Database (tz or zonebase).
+ * https://www.iana.org/time-zones
  *
- * ISO 3166-1 codes for countries.
- * https://en.wikipedia.org/wiki/ISO_3166-1_alpha-3
  */
 
 /*
@@ -21,7 +19,7 @@
 #define CALENDAR_SIZE 2562
 #define TIME_STR_SIZE 6
 
-const char dnk_cph[CALENDAR_SIZE][TIME_STR_SIZE] = {
+const char europe_copenhagen[CALENDAR_SIZE][TIME_STR_SIZE] = {
     "01-01", "17:41", "15:51", "13:35", "12:15", "08:37", "06:40",
     "01-02", "17:42", "15:52", "13:36", "12:15", "08:37", "06:40",
     "01-03", "17:43", "15:53", "13:37", "12:16", "08:36", "06:40",
