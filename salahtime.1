@@ -50,10 +50,13 @@ $ salahtime -5
 
 .SH "NOTE"
 
-If you want to avoid having to add the number "60" during daylight savings you can create a simple alias and put that into your shell script profile:
+If you're using the Bash shell and you want to avoid having to add the number "60" during daylight savings you can create a simple script that will detect daylights savings and then add 60 minutes:
 
 .nf
-alias salahtime='salahtime 60'
+# Automatic detection of summer time for salahtime.
+if test $OFF_NOW -gt $OFF_1 || test $OFF_NOW -gt $OFF_7; then
+    alias salahtime='salahtime 60; printf "Daylights savings: On\n"';                                          
+fi
 .fi
 
 Currently the maximum amount of minutes you can add or subtract are 120 minutes.
