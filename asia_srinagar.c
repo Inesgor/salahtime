@@ -7,6 +7,7 @@
  *   in that the former uses 12hr-time, while latter
  *   uses 24hr-time, mainly because thats the data I got
  *   and also because thats the prevalent system in Srinagar.
+ *   I couldn't add am/pm to time, as that reports error.
  *
  * The Timezone Database (tz or zonebase).
  * https://www.iana.org/time-zones

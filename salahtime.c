@@ -85,7 +85,7 @@ display_calendar(const char calendar_array[CALENDAR_SIZE][TIME_STR_SIZE],
 
     strftime(current_day, 6, "%m-%d", tm_data);
     strftime(current_date, 11, "%d-%m-%Y", tm_data);
-    strftime(current_time, 6, "%H:%M", tm_data);
+    strftime(current_time, 6, "%I:%M", tm_data);
 
     printf("---------------------");
     printf("\nDate today: %s", current_date);
