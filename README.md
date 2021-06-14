@@ -31,7 +31,7 @@ The following example uses the Bash shell.
 
 ```
 $ mkdir $HOME/bin
-$ cp salahtime $HOME/bin/
+$ ln -s salahtime $HOME/bin/
 ```
 
 Edit `.bashrc` in your home directory with your favorite text editor and add the "bin" folder to your $PATH variable.
@@ -51,6 +51,7 @@ If you need to uninstall salahtime just remove it from the "bin" folder.
 See the man page for usage information:
 
 ```
+$ ln -s ./salahtime.1 /usr/share/man/man1/
 $ man salahtime.1
 ```
 

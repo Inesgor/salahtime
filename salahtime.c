@@ -87,7 +87,8 @@ display_calendar(const char calendar_array[CALENDAR_SIZE][TIME_STR_SIZE],
     strftime(current_date, 11, "%d-%m-%Y", tm_data);
     strftime(current_time, 6, "%H:%M", tm_data);
 
-    printf("\nDate today %s\n\n", current_date);
+    printf("\nDate today: %s\n", current_date);
+    printf("Time right now: %s\n\n", current_time);
     printf("---------------------\n");
 
     int i = 0;
@@ -114,9 +115,6 @@ display_calendar(const char calendar_array[CALENDAR_SIZE][TIME_STR_SIZE],
             printf("Isha:\t\t%s\n", g_converted_time_string);
         }
     }
-
-    printf("---------------------\n\n");
-    printf("The time right now is: \t%s\n\n", current_time);
 }
 
 /*
