@@ -5,7 +5,7 @@
 #include <stdlib.h>
 
 #include "salahtime.h"
-#include "europe_copenhagen.c"
+#include "asia_srinagar.c"
 
 #define MAX_MINUTES 120
 #define MIN_MINUTES -120
@@ -87,9 +87,10 @@ display_calendar(const char calendar_array[CALENDAR_SIZE][TIME_STR_SIZE],
     strftime(current_date, 11, "%d-%m-%Y", tm_data);
     strftime(current_time, 6, "%H:%M", tm_data);
 
-    printf("\nDate today: %s\n", current_date);
-    printf("Time right now: %s\n\n", current_time);
-    printf("---------------------\n");
+    printf("---------------------");
+    printf("\nDate today: %s", current_date);
+    printf("\nTime right now: %s", current_time);
+    printf("\n---------------------\n");
 
     int i = 0;
 
@@ -149,7 +150,7 @@ main(int argc, char *argv[])
 
     }
 
-    display_calendar(europe_copenhagen, add_sub_min);
+    display_calendar(asia_srinagar, add_sub_min);
 
     return 0;
 }
