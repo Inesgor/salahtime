@@ -84,7 +84,7 @@ display_calendar(const char calendar_array[CALENDAR_SIZE][TIME_STR_SIZE],
     struct  tm *tm_data = localtime(&time_now);
 
     strftime(current_day, 6, "%m-%d", tm_data);
-    strftime(current_date, 11, "%d/%m-%Y", tm_data);
+    strftime(current_date, 11, "%d-%m-%Y", tm_data);
     strftime(current_time, 6, "%H:%M", tm_data);
 
     printf("\nDate today %s\n\n", current_date);
@@ -116,7 +116,7 @@ display_calendar(const char calendar_array[CALENDAR_SIZE][TIME_STR_SIZE],
     }
 
     printf("---------------------\n\n");
-    printf("Time is now: \t%s\n\n", current_time);
+    printf("The time right now is: \t%s\n\n", current_time);
 }
 
 /*
