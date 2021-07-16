@@ -5,7 +5,7 @@
 #include <stdlib.h>
 
 #include "salahtime.h"
-#include "asia_srinagar.c"
+#include "europe_copenhagen.c"
 
 #define MAX_MINUTES 120
 #define MIN_MINUTES -120
@@ -120,7 +120,7 @@ display_calendar(const char calendar_array[CALENDAR_SIZE][TIME_STR_SIZE],
 
 /*
  * A small command line application that displays the Islamic prayer times for
- * Copenhagen, Denmark.
+ * your city (default: Copenhagen, Denmark).
  */
 int
 main(int argc, char *argv[])
@@ -150,7 +150,7 @@ main(int argc, char *argv[])
 
     }
 
-    display_calendar(asia_srinagar, add_sub_min);
+    display_calendar(europe_copenhagen, add_sub_min);
 
     return 0;
 }
